@@ -1,0 +1,117 @@
+body.light-theme {
+    background-color: #f5f5f5;
+}
+
+body.light-theme .cv-container {
+    background-color: #ffffff;
+}
+
+body.light-theme .cv-header {
+    background-color: #ffffff;
+    border-bottom-color: #e0e0e0;
+}
+
+body.light-theme .surname,
+body.light-theme .role-title {
+    color: #1a1a1a;
+}
+
+body.light-theme .divider {
+    background-color: #1a1a1a;
+}
+
+body.light-theme .sidebar {
+    background-color: #f9f9f9;
+    border-right-color: #e0e0e0;
+}
+
+body.light-theme .section-title {
+    color: #1a1a1a;
+    border-bottom-color: #e0e0e0;
+}
+
+body.light-theme .label {
+    color: #1a1a1a;
+}
+
+body.light-theme .value {
+    color: #4a4a4a;
+}
+
+body.light-theme .info-item,
+body.light-theme .contact-item {
+    border-bottom-color: #e0e0e0;
+}
+
+body.light-theme .skill-name {
+    color: #1a1a1a;
+}
+
+body.light-theme .skill-bar {
+    background-color: #e0e0e0;
+}
+
+body.light-theme .main-content {
+    background-color: #ffffff;
+}
+
+body.light-theme .profile-text {
+    color: #2a2a2a;
+}
+
+body.light-theme .circle-label {
+    color: #1a1a1a;
+}
+
+body.light-theme .circle-bg {
+    stroke: #e0e0e0;
+}
+
+body.light-theme .timeline::before {
+    background: #d0d0d0;
+}
+
+body.light-theme .timeline-dot {
+    background-color: #1a1a1a;
+}
+
+body.light-theme .job-title {
+    color: #1a1a1a;
+}
+
+body.light-theme .job-company {
+    color: #4a4a4a;
+}
+
+body.light-theme .timeline-year path {
+    fill: #1a1a1a;
+    stroke: #1a1a1a;
+}
+
+body.light-theme a:hover {
+    opacity: 0.6;
+}
+
+body.light-theme .logo path{
+    fill: #1a1a1a;
+}
+
+body.light-theme .timeline-year text{
+    fill: #e0e0e0;
+    stroke:  #e0e0e0;
+}
+/* Tags light theme */
+body.light-theme .tag {
+    border-color: #d0d0d0;
+    color: #444;
+    background-color: #f0f0f0;
+}
+
+body.light-theme .tag:hover {
+    border-color: #00aa55;
+    color: #00aa55;
+}
+
+body.light-theme .skill-group-label {
+    color: #555555;
+}

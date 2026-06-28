@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV - Software Developer & QA Engineer">
+    <title>CV - Nato Japaridze</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-theme.css" id="theme-style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="floating-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+        <button id="export-pdf" aria-label="Export PDF">
+            <span class="pdf-icon">⬇</span>
+            <span class="pdf-label">PDF</span>
+        </button>
+    </div>
+
+    <div class="cv-container" id="cv-to-export">
+
+        <header class="cv-header">
+            <div class="profile-image">
+                <img src="assets/images/profile.jpg" alt="Nato Japaridze">
+            </div>
+            <div class="header-title">
+                <div class="name-container">
+                    <h1 class="name-highlight">NATO</h1>
+                    <h1 class="surname">JAPARIDZE</h1>
+                </div>
+                <div class="divider"></div>
+                <div class="role-container">
+                    <h2 class="role-title">SOFTWARE DEV</h2>
+                    <h2 class="role-highlight">& QA ENGINEER</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="cv-content">
+            <aside class="sidebar">
+                <section class="personal-section">
+                    <h3 class="section-title">PERSONAL</h3>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="label">Name</span>
+                            <span class="value">Nato Japaridze</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location</span>
+                            <span class="value">Tbilisi, Georgia</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Address</span>
+                            <span class="value">A. Tsereteli Ave 99</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Nationality</span>
+                            <span class="value">Georgian</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Languages</span>
+                            <span class="value">Georgian (Native) · English B1 · ICT English C1</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-section">
+                    <h3 class="section-title">CONTACT</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="label">Phone</span>
+                            <a href="tel:+995501221199" class="value">+995 501 22 11 99</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Email</span>
+                            <a href="mailto:natalie.japharidze@gmail.com" class="value">natalie.japharidze@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Web</span>
+                            <a href="https://nataliejapharidze.github.io/10x-MyFirstRepo/" target="_blank" class="value">nataliejapharidze.github.io</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/natalij-841479189/" target="_blank" class="value">Natali Japaridze</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills-section">
+                    <h3 class="section-title">TECH SKILLS</h3>
+                    <div class="skill-groups">
+
+                        <div class="skill-group">
+                            <span class="skill-group-label">Languages</span>
+                            <div class="tags-container">
+                                <span class="tag">C# / .NET</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">HTML / CSS / JS</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="skill-group-label">Web & Frameworks</span>
+                            <div class="tags-container">
+                                <span class="tag">ASP.NET MVC</span>
+                                <span class="tag">WCF</span>
+                                <span class="tag">Razor Pages</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">Windows Forms</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="skill-group-label">Databases</span>
+                            <div class="tags-container">
+                                <span class="tag">MS SQL Server</span>
+                                <span class="tag">Oracle</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Entity Framework</span>
+                                <span class="tag">LINQ</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="skill-group-label">Testing & QA</span>
+                            <div class="tags-container">
+                                <span class="tag">Selenium</span>
+                                <span class="tag">Appium</span>
+                                <span class="tag">Pytest</span>
+                                <span class="tag">Postman</span>
+                                <span class="tag">Swagger</span>
+                                <span class="tag">Allure</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="skill-group-label">Cloud & DevOps</span>
+                            <div class="tags-container">
+                                <span class="tag">AWS S3</span>
+                                <span class="tag">AWS EC2</span>
+                                <span class="tag">IAM</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="sidebar-footer">
+                    <svg class="logo" width="85" height="31" viewBox="0 0 73 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3489 11.8699C19.9699 12.2512 19.6797 12.7114 19.4989 13.2176C19.3181 13.7239 19.2512 14.2638 19.3029 14.7989L19.2849 14.7809C19.3381 15.4108 19.2531 16.0446 19.036 16.6383C18.8189 17.2319 18.4749 17.771 18.028 18.218C17.581 18.6649 17.0419 19.009 16.4482 19.226C15.8546 19.4431 15.2207 19.5281 14.5909 19.4749L14.6089 19.4929C13.8555 19.4228 13.0988 19.5867 12.4419 19.9624C11.7851 20.3381 11.2601 20.9072 10.9386 21.5922C10.6171 22.2772 10.5146 23.0446 10.6452 23.79C10.7759 24.5353 11.1332 25.2222 11.6685 25.757C12.2038 26.2918 12.891 26.6485 13.6364 26.7784C14.3819 26.9084 15.1492 26.8052 15.8339 26.4831C16.5186 26.1609 17.0872 25.6355 17.4623 24.9783C17.8374 24.3211 18.0007 23.5643 17.9299 22.8109L17.9489 22.8289C17.8957 22.1991 17.9806 21.5652 18.1977 20.9715C18.4148 20.3779 18.7589 19.8388 19.2058 19.3918C19.6528 18.9449 20.1919 18.6008 20.7855 18.3838C21.3792 18.1667 22.013 18.0817 22.6429 18.1349L22.6239 18.1169C23.2393 18.1722 23.8588 18.0713 24.4249 17.8235C24.9909 17.5757 25.4853 17.189 25.8621 16.6993C26.2389 16.2096 26.4861 15.6326 26.5805 15.022C26.675 14.4113 26.6138 13.7867 26.4026 13.2059C26.1914 12.6252 25.837 12.1072 25.3723 11.6999C24.9076 11.2926 24.3476 11.0092 23.7442 10.876C23.1408 10.7428 22.5135 10.764 21.9205 10.9377C21.3275 11.1115 20.788 11.4321 20.3519 11.8699H20.3489Z" fill="#292929" />
+                        <path d="M12.9719 17.1349L12.9529 17.1169C13.4882 17.1708 14.0288 17.1051 14.5357 16.9245C15.0425 16.7439 15.5029 16.453 15.8835 16.0727C16.264 15.6924 16.5554 15.2322 16.7363 14.7255C16.9173 14.2188 16.9834 13.6783 16.9299 13.1429L16.9489 13.1609C16.8957 12.531 16.9807 11.8972 17.1977 11.3035C17.4148 10.7099 17.7589 10.1708 18.2058 9.7238C18.6528 9.2769 19.1919 8.9328 19.7855 8.7158C20.3792 8.49866 21.013 8.41373 21.6429 8.4669L21.6239 8.4489C22.3774 8.5197 23.1343 8.35626 23.7915 7.981C24.4488 7.60574 24.9742 7.03687 25.2962 6.352C25.6182 5.66714 25.7211 4.89961 25.5909 4.1541C25.4607 3.40859 25.1037 2.72141 24.5685 2.18627C24.0334 1.65114 23.3462 1.2941 22.6007 1.16388C21.8552 1.03365 21.0877 1.13656 20.4028 1.45858C19.7179 1.78059 19.1491 2.30604 18.7738 2.96325C18.3985 3.62045 18.2351 4.37742 18.3059 5.1309L18.2879 5.1119C18.3412 5.74179 18.2564 6.37573 18.0394 6.96945C17.8224 7.56317 17.4783 8.10236 17.0314 8.5494C16.5844 8.9963 16.0452 9.3404 15.4515 9.5574C14.8577 9.7744 14.2238 9.8592 13.5939 9.8059L13.6119 9.8249C13.0766 9.771 12.5359 9.8367 12.0291 10.0173C11.5223 10.1978 11.0619 10.4888 10.6813 10.8691C10.3007 11.2494 10.0094 11.7096 9.8284 12.2163C9.6475 12.723 9.5814 13.2635 9.6349 13.7989L9.6169 13.7809C9.6699 14.4107 9.5848 15.0445 9.3677 15.6381C9.1505 16.2316 8.8065 16.7707 8.3596 17.2176C7.91266 17.6645 7.37362 18.0085 6.78006 18.2257C6.1865 18.4428 5.55271 18.5279 4.9229 18.4749L4.9409 18.4929C4.18742 18.4221 3.43045 18.5855 2.77324 18.9608C2.11604 19.3361 1.59059 19.9049 1.26858 20.5898C0.946563 21.2747 0.843643 22.0422 0.973873 22.7877C1.1041 23.5332 1.46114 24.2204 1.99627 24.7555C2.53141 25.2907 3.21859 25.6477 3.9641 25.7779C4.70961 25.9081 5.47714 25.8052 6.16201 25.4832C6.84687 25.1612 7.41574 24.6358 7.791 23.9786C8.1663 23.3213 8.3297 22.5644 8.2589 21.8109L8.2779 21.8289C8.2247 21.199 8.3097 20.5652 8.5268 19.9715C8.7438 19.3779 9.0879 18.8388 9.5348 18.3918C9.9818 17.9449 10.5209 17.6008 11.1145 17.3838C11.7082 17.1667 12.342 17.0817 12.9719 17.1349Z" fill="#292929" />
+                        <path d="M6.2699 15.1279C6.64892 14.7467 6.9391 14.2865 7.11974 13.7802C7.30038 13.2739 7.36702 12.7339 7.3149 12.1989L7.33389 12.2169C7.28069 11.5869 7.36565 10.9528 7.58286 10.359C7.80007 9.7652 8.1443 9.226 8.5915 8.779C9.0387 8.33202 9.578 7.98803 10.1719 7.77108C10.7658 7.55412 11.3999 7.46942 12.0299 7.5229L12.0109 7.5049C12.7641 7.57547 13.5208 7.41198 14.1777 7.03674C14.8346 6.66151 15.3597 6.09278 15.6816 5.40813C16.0034 4.72347 16.1062 3.95622 15.976 3.21099C15.8458 2.46576 15.4888 1.77884 14.9539 1.2439C14.419 0.708962 13.732 0.352042 12.9868 0.221822C12.2416 0.0915916 11.4743 0.194412 10.7897 0.516232C10.105 0.838052 9.5363 1.36322 9.1611 2.02012C8.7858 2.67702 8.6223 3.43368 8.6929 4.1869L8.6749 4.1689C8.7281 4.79875 8.6431 5.43262 8.426 6.02626C8.2089 6.6199 7.86492 7.15901 7.41796 7.60597C6.97101 8.05293 6.43189 8.39696 5.83825 8.614C5.24461 8.8311 4.61075 8.9161 3.9809 8.8629L3.9989 8.8809C3.38347 8.8257 2.76406 8.9268 2.19808 9.1747C1.6321 9.4226 1.13785 9.8094 0.761139 10.2992C0.384429 10.7889 0.137449 11.3659 0.0430689 11.9765C-0.0513011 12.5872 0.0099889 13.2118 0.221259 13.7924C0.432529 14.3731 0.786959 14.891 1.25169 15.2982C1.71642 15.7055 2.27642 15.9888 2.8798 16.122C3.48317 16.2551 4.1104 16.2338 4.70337 16.0601C5.29633 15.8863 5.83583 15.5657 6.27189 15.1279H6.2699Z" fill="#292929" />
+                        <path d="M39.0837 17.6V20.5H37.3437C36.1037 20.5 35.137 20.2 34.4437 19.6C33.7503 18.9867 33.4037 17.9933 33.4037 16.62V12.18H32.0437V9.34H33.4037V6.62H36.8237V9.34H39.0637V12.18H36.8237V16.66C36.8237 16.9933 36.9037 17.2333 37.0637 17.38C37.2237 17.5267 37.4903 17.6 37.8637 17.6H39.0837ZM42.7087 8.18C42.1087 8.18 41.6153 8.00667 41.2287 7.66C40.8553 7.3 40.6687 6.86 40.6687 6.34C40.6687 5.80667 40.8553 5.36667 41.2287 5.02C41.6153 4.66 42.1087 4.48 42.7087 4.48C43.2953 4.48 43.7753 4.66 44.1487 5.02C44.5353 5.36667 44.7287 5.80667 44.7287 6.34C44.7287 6.86 44.5353 7.3 44.1487 7.66C43.7753 8.00667 43.2953 8.18 42.7087 8.18ZM44.4087 9.34V20.5H40.9887V9.34H44.4087ZM46.2071 14.9C46.2071 13.7533 46.4204 12.7467 46.8471 11.88C47.2871 11.0133 47.8804 10.3467 48.6271 9.88C49.3738 9.41333 50.2071 9.18 51.1271 9.18C51.9138 9.18 52.6004 9.34 53.1871 9.66C53.7871 9.98 54.2471 10.4 54.5671 10.92V9.34H57.9871V20.5H54.5671V18.92C54.2338 19.44 53.7671 19.86 53.1671 20.18C52.5804 20.5 51.8938 20.66 51.1071 20.66C50.2004 20.66 49.3738 20.4267 48.6271 19.96C47.8804 19.48 47.2871 18.8067 46.8471 17.94C46.4204 17.06 46.2071 16.0467 46.2071 14.9ZM54.5671 14.92C54.5671 14.0667 54.3271 13.3933 53.8471 12.9C53.3804 12.4067 52.8071 12.16 52.1271 12.16C51.4471 12.16 50.8671 12.4067 50.3871 12.9C49.9204 13.38 49.6871 14.0467 49.6871 14.9C49.6871 15.7533 49.9204 16.4333 50.3871 16.94C50.8671 17.4333 51.4471 17.68 52.1271 17.68C52.8071 17.68 53.3804 17.4333 53.8471 16.94C54.3271 16.4467 54.5671 15.7733 54.5671 14.92ZM67.2613 9.22C68.568 9.22 69.608 9.64667 70.3813 10.5C71.168 11.34 71.5613 12.5 71.5613 13.98V20.5H68.1613V14.44C68.1613 13.6933 67.968 13.1133 67.5813 12.7C67.1947 12.2867 66.6747 12.08 66.0213 12.08C65.368 12.08 64.848 12.2867 64.4613 12.7C64.0747 13.1133 63.8813 13.6933 63.8813 14.44V20.5H60.4613V9.34H63.8813V10.82C64.228 10.3267 64.6947 9.94 65.2813 9.66C65.868 9.36667 66.528 9.22 67.2613 9.22Z" fill="#292929" />
+                    </svg>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <section class="profile-section">
+                    <h3 class="section-title">PROFILE</h3>
+                    <p class="profile-text">
+                        Motivated and detail-oriented Software Developer and QA Engineer with 5+ years of experience
+                        in backend development, automation testing, data analysis, and banking systems.
+                        Proven track record at JSC Credo Bank in CBS development and across multiple Georgian tech companies.
+                        Passionate about building scalable applications, improving software quality,
+                        and mastering modern cloud and DevOps technologies.
+                    </p>
+
+                    <svg width="0" height="0" style="position: absolute;">
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="gradient-hover" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00ffaa;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#00e6ff;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <div class="circle-container">
+                        <div class="circle-item">
+                            <svg class="circle-svg" width="120" height="120" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="50" data-progress="85"></circle>
+                            </svg>
+                            <div class="circle-label">WEB</div>
+                        </div>
+                        <div class="circle-item">
+                            <svg class="circle-svg" width="120" height="120" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="50" data-progress="90"></circle>
+                            </svg>
+                            <div class="circle-label">C#</div>
+                        </div>
+                        <div class="circle-item">
+                            <svg class="circle-svg" width="120" height="120" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="50" data-progress="78"></circle>
+                            </svg>
+                            <div class="circle-label">QA</div>
+                        </div>
+                        <div class="circle-item">
+                            <svg class="circle-svg" width="120" height="120" viewBox="0 0 120 120">
+                                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="circle-progress" cx="60" cy="60" r="50" data-progress="72"></circle>
+                            </svg>
+                            <div class="circle-label">CLOUD</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="work-section">
+                    <h3 class="section-title">WORK EXPERIENCE</h3>
+                    <div class="timeline">
+                        <div class="timeline-item" data-year="2022">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2022</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">CBS DEVELOPER</h4>
+                                <p class="job-company">JSC CREDO BANK, TBILISI · 11/2022 – 10/2024</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2022">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2022</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">QA ENGINEER & BACK-END DEVELOPER</h4>
+                                <p class="job-company">LLC CAPITAL GROUP, TBILISI · 07/2022 – 03/2023</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2021">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2021</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">QA ENGINEER & DATA ANALYST</h4>
+                                <p class="job-company">LLC NEBULA DAPPS, TBILISI · 12/2021 – 07/2022</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2021">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2021</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">.NET DEVELOPER</h4>
+                                <p class="job-company">SPACEM — SPACE MANAGEMENT SOFTWARE · 05/2021 – 02/2023</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2020">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2020</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">QA MANUAL MANAGER & QA AUTOMATION & BACK-END DEV</h4>
+                                <p class="job-company">SPACE NEOBANK INTERNATIONAL · 04/2020 – 12/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="education-section">
+                    <h3 class="section-title">EDUCATION</h3>
+                    <div class="timeline">
+                        <div class="timeline-item" data-year="2023">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2023</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">DEVOPS MASTER</h4>
+                                <p class="job-company">BUSINESS AND TECHNOLOGY UNIVERSITY · 09/2023 – Present</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2022">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2022</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">.NET DEVELOPMENT</h4>
+                                <p class="job-company">TBC IT ACADEMY · 07/2022 – 02/2023</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2018">
+                            <svg class="timeline-year" width="58" height="23" viewBox="0 0 58 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.90357 0.876589L48.4615 0.876587C49.385 0.876587 50.5394 1.42592 51.0283 2.10381L56.7049 9.9113C57.2482 10.671 57.1939 11.8632 56.5692 12.5761L49.5344 20.6408C49.0319 21.2135 47.9455 21.681 47.117 21.681L3.90357 21.681C1.52697 21.681 0.0874917 19.4369 1.33691 17.6954L5.09867 12.5177C5.60115 11.8281 5.60115 10.7061 5.09867 10.0165L1.33691 4.83877C0.0874918 3.12066 1.54055 0.876589 3.90357 0.876589Z" fill="#292929" stroke="#292929" stroke-width="1.75318" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="50%" y="50%" fill="white" dominant-baseline="middle" text-anchor="middle">2018</text>
+                            </svg>
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4 class="job-title">BACHELOR OF INFORMATION TECHNOLOGIES</h4>
+                                <p class="job-company">BUSINESS AND TECHNOLOGY UNIVERSITY (BTU) · 09/2018 – 07/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="decorative-image">
+                    <img src="assets/images/statue.png" alt="Decorative statue">
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="scripts/circle-animations.js"></script>
+    <script src="scripts/theme-switcher.js"></script>
+    <script src="scripts/export-pdf.js"></script>
+</body>
+
+</html>
