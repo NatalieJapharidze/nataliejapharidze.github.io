@@ -27,65 +27,6 @@ img {
     display: block;
 }
 
-#theme-toggle {
-    background: linear-gradient(135deg, #E0C3FC 0%, #8EC5FC 100%);
-    border: none;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 1s ease, box-shadow 1s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.theme-switcher {
-    position: fixed;
-    top: 50px;
-    right: 80px;
-    z-index: 3;
-}
-
-#theme-toggle:hover {
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-#theme-toggle:active {
-    transform: scale(0.95);
-}
-
-.sun-icon,
-.moon-icon {
-    position: absolute;
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.sun-icon {
-    opacity: 0;
-    transform: rotate(-180deg) scale(0);
-}
-
-.moon-icon {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-}
-
-body.light-theme .sun-icon {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-}
-
-body.light-theme .moon-icon {
-    opacity: 0;
-    transform: rotate(180deg) scale(0);
-}
-
 .cv-container {
     max-width: 1020px;
     width: 100%;
@@ -95,7 +36,7 @@ body.light-theme .moon-icon {
 }
 
 .cv-header {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     border-bottom: solid 1px;
     gap: 40px;
@@ -204,7 +145,7 @@ body.light-theme .moon-icon {
     flex-direction: column;
     gap: 5px;
     border-bottom: solid 0.2px;
-    padding-bottom: 5px;    
+    padding-bottom: 5px;
 }
 
 .label {
@@ -415,108 +356,6 @@ body.light-theme .moon-icon {
     height: auto;
 }
 
-@media (max-width: 1024px) {
-    .cv-content {
-        grid-template-columns: 300px 1fr;
-    }
-
-    .cv-header {
-        padding: 40px 50px;
-        justify-content: center;
-    }
-
-    .sidebar {
-        padding: 40px 30px;
-    }
-
-    .main-content {
-        padding: 40px 50px;
-    }
-}
-
-@media (max-width: 800px) {
-    body {
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    .cv-container {
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    .theme-switcher {
-        top: 15px;
-        right: 15px;
-    }
-
-    #theme-toggle {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-    }
-
-    .cv-header {
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .profile-image {
-        width: 120px;
-        height: 120px;
-    }
-
-    .cv-content {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        padding: 30px 20px;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .main-content {
-        padding: 30px 20px;
-    }
-
-    .timeline {
-        padding-left: 80px;
-    }
-
-    .timeline-year {
-        left: -87px;
-        font-size: 16px;
-        padding: 5px 12px;
-    }
-
-    .timeline-dot {
-        left: -15px;
-        top: 8px;
-        width: 9px;
-        height: 9px;
-    }
-
-    .decorative-image {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .circle-label {
-        font-size: 14px;
-    }
-    
-    .divider {
-        width: 100%;
-        height: 11px;
-    }
-    
-    .name-container,
-    .role-container {
-        width: 100%;
-    }
-}
-/* ===== FLOATING CONTROLS (theme + PDF) ===== */
 .floating-controls {
     position: fixed;
     top: 50px;
@@ -542,6 +381,7 @@ body.light-theme .moon-icon {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex-direction: column;
     gap: 2px;
+    overflow: hidden;
 }
 
 .floating-controls button:hover {
@@ -563,6 +403,42 @@ body.light-theme .moon-icon {
     font-size: 28px;
     position: relative;
     overflow: hidden;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.sun-icon {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0);
+}
+
+.moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+body.light-theme .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+body.light-theme .moon-icon {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
 }
 
 .export-pdf {
@@ -572,6 +448,13 @@ body.light-theme .moon-icon {
     font-weight: 700;
     font-size: 10px;
     letter-spacing: 0.5px;
+}
+
+.export-pdf img {
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .export-pdf .pdf-icon {
@@ -585,7 +468,6 @@ body.light-theme .moon-icon {
     letter-spacing: 0.5px;
 }
 
-/* ===== TAGS / TOOLS SECTION ===== */
 .tools-section {
     display: flex;
     flex-direction: column;
@@ -609,26 +491,6 @@ body.light-theme .moon-icon {
     white-space: nowrap;
 }
 
-/* Remove old theme-switcher */
-.theme-switcher {
-    display: none;
-}
-
-@media (max-width: 800px) {
-    .floating-controls {
-        top: 12px;
-        right: 12px;
-    }
-    .floating-controls button {
-        width: 48px;
-        height: 48px;
-    }
-    #theme-toggle {
-        font-size: 20px;
-    }
-}
-
-/* ===== GROUPED SKILLS (replaces progress bars) ===== */
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -699,6 +561,25 @@ body.light-theme .moon-icon {
     }
 }
 
+@media (max-width: 1024px) {
+    .cv-content {
+        grid-template-columns: 300px 1fr;
+    }
+
+    .cv-header {
+        padding: 40px 50px;
+        justify-content: center;
+    }
+
+    .sidebar {
+        padding: 40px 30px;
+    }
+
+    .main-content {
+        padding: 40px 50px;
+    }
+}
+
 @media (max-width: 867px) {
     .project-logos a {
         width: 90px;
@@ -706,6 +587,88 @@ body.light-theme .moon-icon {
 }
 
 @media (max-width: 800px) {
+    body {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .cv-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .floating-controls {
+        top: 12px;
+        right: 12px;
+        gap: 8px;
+    }
+
+    .floating-controls button {
+        width: 48px;
+        height: 48px;
+    }
+
+    #theme-toggle {
+        font-size: 20px;
+    }
+
+    .export-pdf img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .export-pdf .pdf-icon {
+        font-size: 14px;
+    }
+
+    .export-pdf .pdf-label {
+        font-size: 7px;
+    }
+
+    .cv-header {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cv-content {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 30px 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .timeline {
+        padding-left: 80px;
+    }
+
+    .timeline-year {
+        left: -87px;
+        font-size: 16px;
+        padding: 5px 12px;
+    }
+
+    .timeline-dot {
+        left: -15px;
+        top: 8px;
+        width: 9px;
+        height: 9px;
+    }
+
+    .decorative-image {
+        display: none;
+    }
+
     .project-logos a {
         width: 170px;
     }
@@ -718,6 +681,22 @@ body.light-theme .moon-icon {
 
     .project-logos a {
         width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle-label {
+        font-size: 14px;
+    }
+
+    .divider {
+        width: 100%;
+        height: 11px;
+    }
+
+    .name-container,
+    .role-container {
+        width: 100%;
     }
 }
 
