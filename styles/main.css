@@ -673,9 +673,14 @@ body.light-theme .moon-icon {
     margin-top: 10px;
 }
 
-.project-logos img {
+.project-logos a {
     width: 170px;
-    height: 170px;
+    flex-shrink: 0;
+}
+
+.project-logos img {
+    width: 100%;
+    height: auto;
     object-fit: contain;
     opacity: 0.9;
     transition: transform 0.3s ease,
@@ -683,7 +688,55 @@ body.light-theme .moon-icon {
                 filter 0.3s ease;
 }
 
-.project-logos img:hover {
+.project-logos a:hover img {
     transform: scale(1.15);
     opacity: 1;
+}
+
+@media (max-width: 1060px) {
+    .project-logos a {
+        width: 130px;
+    }
+}
+
+@media (max-width: 867px) {
+    .project-logos a {
+        width: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+    .project-logos a {
+        width: 170px;
+    }
+}
+
+@media (max-width: 590px) {
+    .project-logos {
+        gap: 16px;
+    }
+
+    .project-logos a {
+        width: 130px;
+    }
+}
+
+@media (max-width: 470px) {
+    .project-logos {
+        gap: 16px;
+    }
+
+    .project-logos a {
+        width: 90px;
+    }
+}
+
+@media (max-width: 350px) {
+    .project-logos {
+        gap: 16px;
+    }
+
+    .project-logos a {
+        width: 75px;
+    }
 }
